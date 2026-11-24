@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLAMA KILLERS</title>
+<meta name="description" content="A real-time fantasy battle on a golden plateau, running in your browser. Coming soon.">
+<style>
+  :root { color-scheme: dark; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid; place-items: center; overflow: hidden; color: #f6e2c4;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    /* A sunset behind a storm: gold low in the west, slate overhead. */
+    background:
+      radial-gradient(120% 80% at 18% 78%, #f7b24a 0%, #d9662b 22%, rgba(120, 44, 40, .0) 55%),
+      linear-gradient(180deg, #14131f 0%, #2a2238 38%, #6b3a3a 66%, #c9702f 82%, #2a1a12 82.2%, #120b08 100%);
+  }
+  main { text-align: center; padding: 0 6vw; transform: translateY(-6vh); }
+  h1 {
+    margin: 0; font-weight: 900; line-height: .9; letter-spacing: .02em; text-transform: uppercase;
+    font-size: clamp(3rem, 13vw, 11rem);
+    background: linear-gradient(180deg, #fff3d6 10%, #f4b24e 55%, #a8431f 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 .06em 0 rgba(20, 8, 4, .55));
+  }
+  p { margin: 1.4rem auto 0; max-width: 34rem; font-size: clamp(1rem, 2.1vw, 1.3rem); line-height: 1.5; opacity: .92; }
+  .soon { margin-top: 2.2rem; font-size: .85rem; letter-spacing: .34em; text-transform: uppercase; opacity: .8; }
+  a { color: #ffd98a; text-underline-offset: .2em; }
+  a:hover { color: #fff; }
+  .hills { position: fixed; inset: auto 0 0 0; height: 18vh; pointer-events: none; }
+</style>
+<svg class="hills" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 60 C160 20 260 70 420 48 S700 10 860 44 1080 70 1200 36 V180 H0Z" fill="#1b100b"/>
+  <path d="M0 110 C200 80 340 120 560 100 S900 70 1200 104 V180 H0Z" fill="#0d0705"/>
+</svg>
+<main>
+  <h1>Llama<br>Killers</h1>
+  <p>Two hosts of thirty thousand collide on a golden plateau at sunset. A real-time fantasy battle that runs in your browser.</p>
+  <div class="soon">The battle is coming</div>
+  <p>Meanwhile: <a href="https://kelp.llamakillers.com/">Kelp Cathedral</a>, an underwater scene from the same workshop.</p>
+</main>
+</html>
